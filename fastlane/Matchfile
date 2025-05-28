@@ -1,10 +1,23 @@
-
 GITHUB_REPOSITORY_OWNER ||= ENV["GITHUB_REPOSITORY_OWNER"]
 
-git_url("https://github.com/#{GITHUB_REPOSITORY_OWNER}/Match-Secrets.git")
-
+git_url("git@github.com:dompy/Match-Secrets.git")
 storage_mode("git")
 
 type("appstore")
 
-# The docs are available on https://docs.fastlane.tools/actions/match
+team_id("34KA4T6FA2")
+
+app_identifier([
+  "com.34KA4T6FA2.loopkit.Loop",
+  "com.34KA4T6FA2.loopkit.Loop.statuswidget",
+  "com.34KA4T6FA2.loopkit.Loop.Loop-Intent-Extension",
+  "com.34KA4T6FA2.loopkit.Loop.LoopWidgetExtension",
+  "com.34KA4T6FA2.loopkit.Loop.SmallStatusWidget",
+  "com.34KA4T6FA2.loopkit.Loop.LoopWatch",
+  "com.34KA4T6FA2.loopkit.Loop.LoopWatch.watchkitextension"
+])
+
+include_all_certificates(true)
+
+# The docs are available on https://docs.fastlane.tools/actGITHUB_REPOSITORY_OW$
+
